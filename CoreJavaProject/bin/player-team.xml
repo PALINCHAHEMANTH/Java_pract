@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id = "india" class = "demoPack.additional.util.Team">
+        <property name = "name">
+            <value>India</value>
+        </property>            
+        <property name = "players">
+            <set>
+                <ref bean = "tendulkar"/>
+                <ref bean = "dravid"/>
+                <ref bean = "ganguly"/>
+            </set>
+        </property>                    
+    </bean>
+
+    <bean id = "australia" class = "demoPack.additional.util.Team">
+        <property name = "name">
+            <value>Australia</value>
+        </property>
+    </bean>
+
+    <bean id = "south-africa" class = "demoPack.additional.util.Team">
+        <property name = "name">
+            <value>South Africa</value>
+        </property>
+    </bean>
+
+    <bean id = "tendulkar" class = "demoPack.additional.util.Player">
+        <property name = "name">
+            <value>Sachin Tendulkar</value>
+        </property>
+        <property name = "team">
+            <ref bean = "india"/>
+        </property>
+        <property name = "runsScored">
+            <map>
+                <entry>
+                    <key><ref bean = "australia"/></key>
+                    <value>5638</value>
+                </entry>
+                <entry>
+                    <key><ref bean = "south-africa"/></key>
+                    <value>6383</value>
+                </entry>                
+            </map>
+        </property>        
+    </bean>
+
+    <bean id = "dravid" class = "demoPack.additional.util.Player">
+        <property name = "name">
+            <value>Rahul Dravid</value>
+        </property>
+        <property name = "team">
+            <ref bean = "india"/>
+        </property>
+        <property name = "runsScored">
+        <map>
+            <entry>
+                <key><ref bean = "australia"/></key>
+                <value>3638</value>
+            </entry>
+            <entry>
+                <key><ref bean = "south-africa"/></key>
+                <value>3981</value>
+           </entry>                
+        </map>
+        </property>                
+    </bean>
+
+    <bean id = "ganguly" class = "demoPack.additional.util.Player">
+        <property name = "name">
+            <value>Saurov Ganguly</value>
+        </property>
+        <property name = "team">
+            <ref bean = "india"/>
+        </property>        
+        <property name = "runsScored">
+            <map>
+                <entry>
+                    <key><ref bean = "australia"/></key>
+                    <value>4688</value>
+                </entry>
+                <entry>
+                    <key><ref bean = "south-africa"/></key>
+                    <value>2343</value>
+                </entry>                
+            </map>
+        </property>
+    </bean>
+</beans>

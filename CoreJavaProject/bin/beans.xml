@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    
+    <bean id = "appId1" class = "demoPack.appContext.HelloWorld" init-method="init" destroy-method="destroy">
+	<!-- <bean id = "appId1" class = "demoPack.appContext.HelloWorld" scope="singleton"> -->
+    <!-- <bean id = "appId1" class = "demoPack.appContext.HelloWorld" > -->
+	<!--  	<property name="message" value="Welcome to Spring Framework....!"/> -->
+	</bean>
+
+  	<!-- <bean class = "demoPack.appContext.InitHelloWorld" /> -->
+
+	<bean id = "appId2" class = "demoPack.beanFactory.HelloWorld">
+		<property name = "message" value = "CTS...."/>
+   	</bean>
+
+ 	<!-- Definition for javaCollection -->
+	<bean id = "injectCollection" class = "demoPack.collection.SpringCollection">
+
+	<!-- Results in a setAddressList(java.util.List) call -->
+     <property name = "addressList">
+        <list>
+           <value>INDIA</value>
+           <value>INDIA</value>
+           <value>Australia</value>
+           <value>USA</value>
+           <value>CANADA</value>
+        </list>
+     </property>
+
+	 <!-- Results in a setAddressSet(java.util.Set) call -->
+     <property name = "addressSet">
+        <set>
+           <value>INDIA</value>
+           <value>INDIA</value>
+           <value>Australia</value>
+           <value>USA</value>
+           <value>CANADA</value>
+        </set>
+     </property>
+
+     <!-- Results in a setAddressMap(java.util.Map) call -->
+     <property name = "addressMap">
+        <map>
+           <entry key = "1" value = "INDIA"/>
+           <entry key = "2" value = "AUSTRALIA"/>
+           <entry key = "3" value = "USA"/>
+           <entry key = "4" value = "CANADA"/>
+        </map>
+     </property>
+     
+     <!-- Results in a setAddressProp(java.util.Properties) call -->
+     <property name = "addressProp">
+        <props>
+           <prop key = "one">INDIA</prop>
+           <prop key = "one">INDIA</prop>
+           <prop key = "two">AUSTRALIA</prop>
+           <prop key = "three">USA</prop>
+           <prop key = "four">CANADA</prop>
+        </props>
+     </property>
+  	</bean> 
+  
+ 	<bean id="beanId1"  class= "demoPack.additional.CompoundInterestBean">
+		<property name="years" 		value="10" />
+		<property name="principal" 	value="50000.0"/>
+		<property name="rate" 		value="9.5" />
+		<property name="time" 		value="25" />
+ 	</bean>
+ 	 	
+  	<!-- <bean id="dao" class="dao.spring.jdbc.JdbcDataSource">
+		<property name="dataSource">
+			<ref bean="dataSource"/>
+		</property>
+	</bean>
+	
+	<bean id="dataSource" destroy-method="close" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE" />
+		<property name="username" value="system" />
+		<property name="password" value="root" />
+	</bean> -->
+</beans>
+
+
+
+
+
+
+
+
+

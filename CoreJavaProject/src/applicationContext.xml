@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean id="appContextService" class="demoPack.additional.ContextServiceImpl">
+		<property name="classProperty" value="Spring it on up!!" />
+	</bean>
+
+	<bean id="beanId2" class="demoPack.additional.StudentBean">
+		<constructor-arg name='studId'>
+			<value>420</value>
+		</constructor-arg>
+		<constructor-arg name='studName'>
+			<value>Vedanth</value>
+		</constructor-arg>
+		<constructor-arg name='marks'>
+			<value>25.5</value>
+		</constructor-arg>
+	</bean>
+	
+   	<bean id = "beanId3" class = "demoPack.annotation.demo3.HelloWorld" init-method = "init" destroy-method = "destroy">
+      <property name = "message" value = "Hello VJIT..."/>
+    </bean>	
+   
+ 	<bean id = "beanId4" class = "demoPack.annotation.demo4.HelloWorld">
+      <property name = "message" value = "Event Handling in Spring Framework"/>
+    </bean>
+
+    <bean id = "startEvent" class = "demoPack.annotation.demo4.StartEvent"/>
+    <bean id = "stopEvent" class = "demoPack.annotation.demo4.StopEvent"/>   
+</beans>
+
+
+
+

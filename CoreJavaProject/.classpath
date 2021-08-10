@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/app/hp/product/18.0.0/dbhomeXE/jdbc/lib/ojdbc8_g.jar"/>
+	<classpathentry kind="lib" path="C:/app/hp/product/18.0.0/dbhomeXE/jdbc/lib/ojdbc8dms_g.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-aop-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-aspects-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-beans-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-context-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-context-support-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-core-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-expression-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-instrument-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-jdbc-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/Spring 4.3.9/spring-tx-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Spring Related Softwares/Actual Spring Required Jars/org.springframework.jdbc-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
